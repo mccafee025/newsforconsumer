@@ -24,5 +24,15 @@
           <div class="banner"><img src="../static/media/1.jpg"></div>
           <div class="head">HEADLINES</div>
     </section>
+    {% for title,desc,img,p_date,url in contents %}
+    <div class="wrapper">
+        <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
+        <div class = "c-box">
+        <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
+        <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
+        <div class="content"><p style="color:teal;">Publish Date:- </p><p>{{p_date}}</p></div>
+        </div>
+        </div>
+    {% endfor %}
 </body>
 </html>
