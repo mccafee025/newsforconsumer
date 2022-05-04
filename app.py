@@ -11,3 +11,5 @@ def home():
     img = []
     p_date = []
     url = []
+    for i in range(len(t_articles)):
+        main_article = t_articles[i]
